@@ -1,0 +1,9 @@
+{
+  "isSeeded": false,
+  "permission": [
+    {
+      "name": "read",
+      "slug": "read"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+### Sign up
+POST http://127.0.0.1:3000/signup HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "abc@gmail.com",
+  "password": "password"
+}
+
+### Get Login Token by exchanign Credential from auths
+POST http://127.0.0.1:3000/auths/api/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "abc@gmail.com",
+  "password": "password"
+}
+
+### Login Api
+POST http://127.0.0.1:3000/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "token": "a769c43a46d30b865ea8e4860c491a1317ab3fdc441b50b36a98645b522ba096",
+  "email": "abc@gmail.com"
+}
+
+### Get /protected API
+GET http://127.0.0.1:3000/protected HTTP/1.1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiY0BnbWFpbC5jb20iLCJyb2xlIjp7InV1aWQiOiI1NDQwMjljZC1iODc4LTRhYzYtYmFiMi03M2VmOTU0YjRiM2UiLCJuYW1lIjoicHJvdGVjdGVkIiwic2x1ZyI6InByb3RlY3RlZCIsImNyZWF0ZWRBdCI6IjIwMjQtMDEtMThUMTU6MDU6MzEuNzEyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDEtMThUMTU6MDU6MzEuNzEyWiIsInBlcm1pc3Npb25zIjpbeyJ1dWlkIjoiNTIwMmVmZDItZGFmOS00N2IzLWEyYjMtMmRlMDY0NTcyM2VlIiwibmFtZSI6InJlYWQiLCJzbHVnIjoicmVhZCIsImNyZWF0ZWRBdCI6IjIwMjQtMDEtMThUMTU6MDQ6MzMuMzMxWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDEtMThUMTU6MDQ6MzMuMzMxWiJ9XX0sInV1aWQiOiIwNzMwYmQyZC05NzEzLTQzMzUtODVlZS0xZjI5MDczZjQxOTEiLCJpYXQiOjE3MDU1OTA1NzQsImV4cCI6MTcwNTY3Njk3NH0.Ks8RMEjkbFy-VPc1BxXJmE2or63DYRVZ0iUU1mhS6BE
